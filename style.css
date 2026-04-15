@@ -1,0 +1,362 @@
+* body {
+    background-color: rgb(158, 246, 215);
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+}
+
+h1 {
+    color: rgb(61, 61, 233);
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: rgb(29, 60, 143) 1px 0 10px, rgb(7, 200, 39) -1px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 20px 5px;
+
+}
+
+.bar-list {
+    display: flex;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+
+.bar-list ul:hover {
+    color: rgb(9, 40, 242);
+    text-shadow: rgb(166, 255, 0) 1px 0 10px, rgb(18, 201, 221) -1px 0 10px;
+    text-size-adjust: calc(100% + 10px);
+    font-size: larger;
+
+}
+
+.bar-list a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.header {
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: larger;
+
+}
+
+
+
+.logo-image {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+.about-section {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(128, 241, 202);
+    padding: 20px;
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px green;
+}
+
+.about-section:hover,
+.skills:hover,
+.course-form:hover,
+.contact-form:hover,
+.courses-table:hover,
+.skill:hover,
+.table-form:hover,
+.logo-image:hover {
+    box-shadow: 0px 4px 8px rgb(9, 40, 242);
+    background-color: rgb(67, 246, 183);
+    transform: scale(1.05);
+
+}
+
+.bio-image {
+    width: 300px;
+    height: auto;
+    border: 5px double green;
+    border-radius: 50%;
+}
+
+p {
+    padding: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+    font-size: larger;
+}
+
+.skills {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+
+
+}
+
+
+h2 {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: none;
+    color: rgb(1, 1, 17);
+}
+
+.course-form {
+    justify-content: center;
+    background-color: rgb(128, 241, 202);
+    padding: 9px;
+    margin: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px green;
+}
+
+table {
+    border: 3px double green;
+    padding: 3px;
+    margin: 20px;
+    width: 80%;
+    height: auto;
+    text-align: center;
+
+}
+
+.table-form {
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    */ background-color: rgb(128, 241, 202);
+    box-shadow: 0px 4px 8px green;
+
+}
+
+table td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+table th {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: rgb(61, 61, 233);
+    color: white;
+}
+
+.contact-form {
+    background-color: rgb(158, 246, 215);
+    /* color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 4px 8px green;
+
+
+}
+
+.contact-form label {
+    display: block;
+    color: rgb(16, 15, 15);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #cfc9c9;
+    border-radius: 4px;
+
+}
+
+.contact-form input {
+    background-color: whhite rgb(61, 61, 233);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form button:hover {
+    border-color: rgb(4, 23, 196);
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    background: green;
+    box-shadow: 0px 4px 8px rgb(9, 40, 242);
+}
+
+.contact-form legend {
+    font-size: 1rem;
+    font-weight: bold;
+    /* color: black; */
+    margin-bottom: 10px;
+}
+
+.skills {
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(128, 241, 202);
+
+    margin: 50px 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px green;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 90%;
+    align-items: center;
+}
+
+.skill {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* .skill:hover {
+    transform: scale(1.05);
+    background: green;
+    box-shadow: 0px 4px 8px rgb(9, 40, 242);
+
+} */
+
+/* Tablet */
+@media (min-width: 1138px) {
+    .skills-container {
+        grid-template-columns: repeat(9, 1fr);
+        gap: 30px;
+        width: auto;
+        max-width: 80%;
+
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.courses-table {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(128, 241, 202);
+    padding: 20px;
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px green;
+
+}
+
+.social-media,
+.you-tube {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(128, 241, 202);
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px green;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    /* color: rgb(9, 207, 242); */
+    background-color: rgb(67, 246, 183);
+    text-shadow: rgb(166, 255, 0) 1px 0 10px, rgb(0, 31, 233) -1px 0 10px;
+    transform: scale(1.09);
+    transform: rotate3d(0, 1, 0, 5deg);
+}
+
+
+    .social-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        box-shadow: 0px 4px 8px green;
+    }
+
+    /* Tablet */
+    @media (max-width: 400px) {
+        .social-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Large screen */
+    @media (min-width: 900px) {
+        .social-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+   body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* main {
+  flex: 1;
+} */
+footer {
+  text-align: center;
+  color: azure;
+  background-color: rgb(23, 24, 23);
+}
