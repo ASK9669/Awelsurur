@@ -28,25 +28,30 @@
             </li>
         </nav>
     </header>
-    <main
-    <!-- home -->
-    <div>
-        <h1 id="h1">Awel Surur Kemer </h1>
+    <main <!-- home -->
+        <div>
+            <h1 id="h1">Awel Surur Kemer </h1>
+        </div>
 
         <!-- About -->
         <section id="about-section" class="about-section">
-            <div>
-                <img src="./ASKprofile.png
-                " alt="ASK logo" class="bio-image">
+
+            <div class="profile-container">
+                <div class="animated-border"></div>
+                <img src="./ASKprofile.png" alt="Profile" class="profile-pic">
             </div>
+
             <div>
                 <p>
 
-                    I'm <b>Awel Surur</b> <i> 2<sup>nd</sup> Year Software Engineering </i>student at Adama Science and
-                    Technology University <b>(ASTU)</b>. I’m a passionate Full-Stack Developer, I specialize in building
+                    I'm <b>Awel Surur</b> <i> 2<sup>nd</sup> Year Software Engineering </i>student at Adama Science
+                    and
+                    Technology University <b>(ASTU)</b>. I’m a passionate Full-Stack Developer, I specialize in
+                    building
                     responsive and user-friendly websites using HTML, CSS, JavaScript and Bootsrap/tailwind.I am
                     currently learning modern technologies like React and backend development to become afull-stack
-                    developer.I have worked on mini personal website, and I enjoy solving problems through code. My goal
+                    developer.I have worked on mini personal website, and I enjoy solving problems through code. My
+                    goal
                     is to become a professional software engineer and contribute to real-world projects.
                     Feel free to explore my portfolio and connect with me!.
                 </p>
@@ -114,21 +119,23 @@
                 </table>
             </div>
         </section>
-        <fieldset id="contact" class="contact-form">
-            <legend>Contact Me</legend>
-            <div>
-                <form action="">
-                    <!-- <label for="name">Name:</label><br> -->
-                    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-                    <!-- <label for="email">Email:</label><br> -->
-                    <input type="email" id="email" name="email" placeholder="Enter your email"><br>
-                    <!-- <label for="message">Message:</label><br> -->
-                    <textarea id="message" name="message" placeholder="You message here..."></textarea><br>
-                    <button>Submitt</button>
-                </form>
-            </div>
+        <section>
+            <fieldset id="contact" class="contact-form">
+                <legend>Contact Me</legend>
+                <div>
+                    <form action="">
+                        <!-- <label for="name">Name:</label><br> -->
+                        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                        <!-- <label for="email">Email:</label><br> -->
+                        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                        <!-- <label for="message">Message:</label><br> -->
+                        <textarea id="message" name="message" placeholder="You message here..."></textarea><br>
+                        <button type="button" onclick="document.write('Message sent,  Thank you')">Send</button>
+                    </form>
+                </div>
 
-        </fieldset>
+            </fieldset>
+        </section>
         <section class="social-container">
             <div class="social-media">
                 <h3>Follow me on social media:</h3>
@@ -148,9 +155,9 @@
         </section>
 
     </main>
-        <footer>
-            <p>&copy; 2026 ASK Portfolio. All rights reserved.</p>
-        </footer>
+    <footer>
+        <p>&copy; 2026 ASK Portfolio. All rights reserved.</p>
+    </footer>
 
 
 

@@ -94,14 +94,6 @@ h1 {
     transform: scale(1.05);
 
 }
-
-.bio-image {
-    width: 300px;
-    height: auto;
-    border: 5px double green;
-    border-radius: 50%;
-}
-
 p {
     padding: 10px;
     margin-left: 20px;
@@ -173,7 +165,7 @@ table th {
     padding: 20px;
     border-radius: 8px;
     max-width: 800px;
-    margin: auto;
+    margin: 10px;
     box-shadow: 0px 4px 8px green;
 
 
@@ -289,16 +281,7 @@ button:hover {
     }
 }
 
-.courses-table {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(128, 241, 202);
-    padding: 20px;
-    margin: 18px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px green;
 
-}
 
 .social-media,
 .you-tube {
@@ -314,50 +297,118 @@ button:hover {
     text-decoration: none;
     font-size: 3rem;
     margin: 0 10px;
-    color: blue
+    color: rgb(29, 29, 245)
 }
 
 .social-media a:hover {
-    color: white;
+    color: rgb(13, 227, 34);
     background-color: rgb(67, 246, 183);
     text-shadow: rgb(166, 255, 0) 1px 0 10px, rgb(0, 31, 233) -1px 0 10px;
     transform: scale(1.09);
-    transform: rotate3d(0, 1, 0, 5deg);
+
 }
 
+.courses-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    box-shadow: 0px 4px 8px green;
+}
 
-    .social-container {
-        display: grid;
+/* Tablet */
+@media (max-width: 400px) {
+    .courses-table {
         grid-template-columns: 1fr;
-        gap: 20px;
-        box-shadow: 0px 4px 8px green;
     }
-
-    /* Tablet */
-    @media (max-width: 400px) {
-        .social-container {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    /* Large screen */
-    @media (min-width: 900px) {
-        .social-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-   body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
 }
 
-/* main {
-  flex: 1;
-} */
+/* Large screen */
+@media (min-width: 900px) {
+    .courses-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.social-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    box-shadow: 0px 4px 8px green;
+}
+
+/* Tablet */
+@media (max-width: 400px) {
+    .social-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large screen */
+@media (min-width: 900px) {
+    .social-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
-  text-align: center;
-  color: azure;
-  background-color: rgb(23, 24, 23);
+    text-align: center;
+    color: azure;
+    background-color: rgb(23, 24, 23);
 }
+
+
+
+
+.profile-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+
+.animated-border {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgb(4, 240, 4), blue, rgb(4, 240, 4), blue);
+  animation: rotate 4s linear infinite;
+}
+
+
+.profile-pic {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
