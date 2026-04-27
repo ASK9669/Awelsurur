@@ -4,7 +4,7 @@
 <head>
     <title>first practice</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -12,23 +12,15 @@
         <img src="./ASKlogo.jpeg" alt="ASK logo" class="logo-image">
 
         <nav class="nav-bar">
-            <li class="bar-list">
-                <!-- <a href="#header">
-                    <ul>Home</ul>
-                </a> -->
-                <a href="#h1">
-                    <ul>About</ul>
-                </a>
-                <a href="#skills">
-                    <ul>Skills</ul>
-                </a>
-                <a href="#contact">
-                    <ul>Contact</ul>
-                </a>
-            </li>
+            <ul class="bar-list">
+                <li><a href="#h1">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main <!-- home -->
+    <main> <!-- home -->
         <div>
             <h1 id="h1">Awel Surur Kemer </h1>
         </div>
@@ -48,8 +40,8 @@
                     and
                     Technology University <b>(ASTU)</b>. I’m a passionate Full-Stack Developer, I specialize in
                     building
-                    responsive and user-friendly websites using HTML, CSS, JavaScript and Bootsrap/tailwind.I am
-                    currently learning modern technologies like React and backend development to become afull-stack
+                    responsive and user-friendly websites using HTML, CSS, JavaScript and Bootstrap/Tailwind.I am
+                    currently learning modern technologies like React and backend development to become a full-stack
                     developer.I have worked on mini personal website, and I enjoy solving problems through code. My
                     goal
                     is to become a professional software engineer and contribute to real-world projects.
@@ -62,61 +54,81 @@
             <h2>My Skills:</h2>
 
             <div class="skills-container">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">Bootsrtap</div>
-                <div class="skill">tailwind</div>
-                <div class="skill">Github</div>
-                <div class="skill">Java</div>
-                <div class="skill">Python</div>
-                <div class="skill">C++</div>
+                <div class="skill">
+                    <i class="fa-brands fa-html5" style="font-size: 82px; color: #E34F26;"></i>
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt" style="font-size: 82px; color: #1572B6;"></i>
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-js" style="font-size: 82px; color: #F7DF1E;"></i>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-bootstrap" style="font-size: 82px; color: #7952B3;"></i>
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-tailwindcss" style="font-size: 82px; color: #38bdf8;"></i>
+                    <p>Tailwind </p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-github" style="font-size: 82px; color: #181717;"></i>
+                    <p>GitHub</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-java" style="font-size: 82px; color: #007396;"></i>
+                    <p>Java</p>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-python" style="font-size: 82px; color: #3776AB;"></i>
+                    <p>Python</p>
+                </div>
             </div>
         </section>
-        <section class="courses-table">
-            <div class="course-form">
-                <p> courses I am taking: </p>
-                <ul type="circle" class="courses">
-                    <li>D.Mathmathics</li>
-                    <li>Digital Logic Design</li>
-                    <li>Oreited object programming</li>
-                    <li>Fandamental Of Software Engineering</li>
-                    <li>Database Systems</li>
-                    <li>Programming under Linux</li>
-                </ul>
+
+
+        <section id="service" class="services">
+            <div class="servicesheader">
+                <h2>Our Services</h2>
+                <hr>
             </div>
-            <div class="table-form">
+            <div class="service-list">
+                <div>
+                    <h4>Creative Idea</h4>
+                    <p>We create innovative solutions that help businesses stand out in the market.</p>
+                </div>
+                <div>
+                    <h4>Web Design</h4>
+                    <p>We design beautiful and functional websites that provide an excellent user experience.</p>
+                </div>
+                <div>
+                    <h4>24/7 Support</h4>
+                    <p>Our team is always available to assist you with any questions or issues you may have.</p>
+                </div>
+                <div>
+                    <h4>Web Development</h4>
+                    <p>We build robust and scalable web applications tailored to your specific needs.</p>
+                </div>
+                <div>
+                    <h4>Responsive layout</h4>
+                    <p>Our websites are designed to look great on all devices, from desktops to mobile phones.</p>
+                </div>
+                <div>
+                    <h4>color Options</h4>
+                    <p>We offer a wide range of color options to match your brand and preferences.</p>
+                </div>
 
-                <table border="1">
-
-                    <caption> Courses and Grades of previous semesters:</caption>
-
-                    <tr>
-                        <th>Course Name </th>
-                        <th>Semester</th>
-                        <th>Grade</th>
-                    </tr>
-                    <tr>
-                        <td>Applied Mathmathics</td>
-                        <td>1st</td>
-                        <td>B+</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>1st</td>
-                        <td>B+</td>
-                    </tr>
-                    <tr>
-                        <td>Drawing </td>
-                        <td>2nd</td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>Data Structures</td>
-                        <td>3rd</td>
-                        <td>A</td>
-                    </tr>
-                </table>
+            </div>
             </div>
         </section>
         <section>
@@ -130,20 +142,39 @@
                         <input type="email" id="email" name="email" placeholder="Enter your email"><br>
                         <!-- <label for="message">Message:</label><br> -->
                         <textarea id="message" name="message" placeholder="You message here..."></textarea><br>
-                        <button type="button" onclick="document.write('Message sent,  Thank you')">Send</button>
+                        <button type="button" onclick="alert('Message sent, Thank you!')">Send</button>
                     </form>
                 </div>
 
             </fieldset>
         </section>
         <section class="social-container">
-            <div class="social-media">
-                <h3>Follow me on social media:</h3>
-                <a href="https://www.facebook.com/awel.surur.5"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/awel_surur/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/awel-surur-9b1b4b1b6/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://t.me/ASK6969"><i class="fa-brands fa-telegram"></i></a>
+            <div class="social-links" style="display: flex; gap: 20px; align-items: center;">
+
+                <a href="https://www.facebook.com/awel.surur.5">
+                    <i class="fa-brands fa-facebook" style="font-size: 40px; color: #1877F2;"></i>
+                </a>
+
+                <a href="https://www.instagram.com/awel_surur/">
+                    <i class="fa-brands fa-instagram" style="font-size: 40px; color: #E4405F;"></i>
+                </a>
+
+                <a href="https://t.me/ASK6969">
+                    <i class="fa-brands fa-telegram" style="font-size: 40px; color: #26A5E4;"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/awel-surur-9b1b4b1b6/">
+                    <i class="fa-brands fa-linkedin" style="font-size: 40px; color: #0A66C2;"></i>
+                </a>
+
+                <a href="https://twitter.com/AwelSurur69">
+                    <i class="fa-brands fa-x-twitter" style="font-size: 40px; color: #000000;"></i>
+                </a>
+
             </div>
+
+
+
             <div class="you-tube">
                 <h3>for more educational content, visit this channel:</h3>
                 <iframe width="200" height="100" src="https://www.youtube.com/embed/r4VfG_Xf3h4?si=XGMmM-canJJV7-L8"
